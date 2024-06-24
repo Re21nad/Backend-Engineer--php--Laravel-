@@ -60,7 +60,7 @@
 
                     // Check the array numbers is empty or not
                     if (empty($num)) {
-                        return 'Array numbers is empty';
+                        return ['min' => null, 'max' => null];
                     }
 
                     // Define the max and min number
@@ -81,10 +81,26 @@
                 }
 
                 // Create an array and apply the minMax() function
+                echo "<p style='color: red'> The array numbers (1):</p>";
                 $numbers = [2, 5, 17, 2, -8, -1, 4, 10, 15, 20, (2-5), (3+4-1), (16+5*4)];
                 $result = minMax($numbers); // Applying the function
-                echo "<p>Minimum value: " . $result['min'] . "\n</p>"; // Output: Minimum value: -8
-                echo "<p>Maximum value: " . $result['max'] . "\n</p>"; // Output: Maximum value: 36
+                if($result['max'] == null && $result['min'] == null){
+                    echo "<p> The array is empty! </p>";
+                }else{
+                    echo "<p>Minimum value: " . $result['min'] . "\n</p>"; 
+                    echo "<p>Maximum value: " . $result['max'] . "\n</p>"; 
+                }
+
+                echo "<p style='color: red'> The array numbers (2):</p>";
+                $numbers =[];
+                $result = minMax($numbers); // Applying the function
+                if($result['max'] == null && $result['min'] == null){
+                    echo "<p> The array is empty! </p>";
+                }else{
+                    echo "<p>Minimum value: " . $result['min'] . "\n</p>"; 
+                    echo "<p>Maximum value: " . $result['max'] . "\n</p>"; 
+                }
+                
 
             ?>
         </div>
