@@ -60,10 +60,11 @@
                     // Convert the decimal num to binary num if the num is greater than 0
                     while ($num > 0) {
                         
-                        $binary = ($num & 1) . $binary;
-
-                        // Right shift the number by 1
-                        $num = $num >> 1;
+                        $bin = ($num & 1); // Extract the least significant bit
+                        
+                        $binary = $bin . $binary; // Append it to the left of the binary string
+                        
+                        $num = $num >> 1; // Right shift the number by 1
                     }
 
                     // Check if the number is 0 or not then return the binary num
