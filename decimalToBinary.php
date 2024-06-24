@@ -42,7 +42,6 @@
             justify-content: center;
         }
 
-
     </style>
 </head>
 <body>
@@ -51,7 +50,7 @@
         <div class="output">
 
             <?php
-                // Define the decToBin() class
+                // Define the decToBin() function
                 function decToBin($num) {
 
                     // Define the variable to store the binary number
@@ -59,7 +58,7 @@
 
                     // Convert the decimal num to binary num if the num is greater than 0
                     while ($num > 0) {
-                        
+
                         $bin = ($num & 1); // Extract the least significant bit
                         
                         $binary = $bin . $binary; // Append it to the left of the binary string
