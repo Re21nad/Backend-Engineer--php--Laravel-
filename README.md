@@ -22,7 +22,7 @@
 <img src = 'decimalToBinary.png'>
 
 ## 5- Fibonacci Sequence (Laravel Way)
-[Answer5 Code]()
+[Answer5 Code](https://github.com/Re21nad/Backend-Engineer--php--Laravel-/blob/main/fibonacciSequence/app/Http/Controllers/FibonacciController.php)
 
 <img src = 'fibonacci.png'>
 
