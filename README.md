@@ -24,6 +24,7 @@
 ## 5- Fibonacci Sequence (Laravel Way)
 [Answer5 Code](https://github.com/Re21nad/Backend-Engineer--php--Laravel-/blob/main/fibonacciSequence/app/Http/Controllers/FibonacciController.php)
 
+<img src = 'home.png'>
 <img src = 'fibonacci.png'>
 
 ## 6- Find Prime Numbers in a Range
