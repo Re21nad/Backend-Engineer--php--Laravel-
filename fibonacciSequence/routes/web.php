@@ -19,5 +19,9 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/abstract', function () {
+    return view('AbstractClass_vs_Interface.php');
+});
+
 Route::get('/fibonacci/{length}', [FibonacciController::class, 'generateFibonacci']);
 
