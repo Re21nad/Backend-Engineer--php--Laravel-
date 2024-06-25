@@ -76,33 +76,17 @@
 </head>
 <body>
     <h1>Home Page</h1>
-    <p>There are all the solution in all questions</p>
+    <p>There is the answer of question 5</p>
     <div class="container">
-        <div class="col">
+        <div class="col">           
             <div class="row">
-                <button onclick="navigateTo('AbstractClass_vs_Interface.php')">Q1: Abstract and Interface</button>
-            </div>
-            <div class="row">
-                <button>Q2: Recursive Factorial Function</button>
-            </div>
-            <div class="row">
-                <button>Q3: Find Max and Min in Array</button>
-            </div>
-            <div class="row">
-                <button>Q4: Decimal to Binary Conversion</button>
-            </div>
-            <div class="row">
+                <!-- The navigation of answer of the Q5 -->
                 <button onclick="navigateTo('/fibonacci/10')">Q5: Fibonacci Sequence (Laravel Way)</button>
-            </div>
-            <div class="row">
-                <button>Q6: Find Prime Numbers in a Range</button>
-            </div>
-            <div class="row">
-                <button>Q7: Palindrome Check</button>
             </div>
         </div>
     </div>
 
+    <!-- Function to navigate -->
     <script>
         function navigateTo(path) {
             window.location.href = path;

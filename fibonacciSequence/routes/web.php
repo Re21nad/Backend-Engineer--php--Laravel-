@@ -15,13 +15,11 @@ use App\Http\Controllers\FibonacciController;
 |
 */
 
+// Path of Home Page
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/abstract', function () {
-    return view('AbstractClass_vs_Interface.php');
-});
-
+// Path for the file of question 5
 Route::get('/fibonacci/{length}', [FibonacciController::class, 'generateFibonacci']);
 
